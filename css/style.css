@@ -1,0 +1,239 @@
+/* =========================================
+   COLOURS - CHANGE THEM HERE
+   ========================================= */
+
+:root {
+    --bg: #000136;           /* Main website background */
+    --text: #FFFFFF;         /* Main text and headings */
+    --grey: #CCCCCC;         /* Secondary text */
+
+    --accent: #B885FF;       /* Labels and navigation hover */
+    --year: #CBBDFF;         /* Timeline year numbers */
+
+    --button: #FFFFFF;       /* All buttons normal background */
+    --button-hover: #6E2F8F; /* All buttons hover background */
+
+    --secret-box: #211087;   /* Secret cards background */
+    --image-box: #211087;    /* Image backgrounds */
+
+    --line: #6363D6;         /* All borders and dividing lines */
+
+    /* === FOOTER COLOURS === */
+    --footer-bg: #FFFFFF;        /* Footer background */
+    --footer-text: #000136;      /* Main footer text and headings */
+    --footer-secondary: #3B3B3B; /* Footer descriptions and smaller text */
+}
+
+
+/* === GENERAL RESET === */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* === PAGE SCROLLING === */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+
+/* === MAIN BODY STYLE === */
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+}
+
+
+/* === HEADINGS AND TEXT FORMATTING === */
+h1, h2, h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+h1 { font-size: 64px; letter-spacing: -1px; }
+h2 { font-size: 40px; margin-bottom: 40px; }
+h3 { font-size: 26px; }
+
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+
+
+/* === HEADER AND NAVIGATION === */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 8%;
+    background: var(--bg);
+    border-bottom: 1px solid var(--line);
+}
+
+.logo {
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+nav ul {
+    display: flex;
+    gap: 24px;
+}
+
+nav a {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid var(--text);
+}
+
+nav a:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+}
+
+
+/* === IMAGE STYLING === */
+.foto {
+    background: var(--image-box);
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+}
+
+.foto img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* === HERO / INTRODUCTION SECTION === */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    padding: 80px 8%;
+}
+
+.label {
+    margin-bottom: 20px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent);
+}
+
+.hero h1 { margin-bottom: 24px; }
+
+.lead {
+    max-width: 480px;
+    margin-bottom: 32px;
+    color: var(--grey);
+}
+
+
+/* === BUTTONS - ALL BUTTONS SHARE COLOURS === */
+.poga,
+button {
+    color: var(--bg);
+    background: var(--button);
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+}
+
+/* Main page button */
+.poga {
+    display: inline-block;
+    padding: 14px 28px;
+    font-size: 14px;
+}
+
+/* Other buttons */
+button {
+    padding: 10px 20px;
+    font: inherit;
+    font-size: 13px;
+}
+
+/* All buttons when hovered */
+.poga:hover,
+button:hover {
+    color: var(--bg);
+    background: var(--button-hover);
+}
+
+
+/* === GENERAL PAGE SECTIONS === */
+.page-section {
+    padding: 80px 8%;
+    border-top: 1px solid var(--line);
+}
+
+
+/* === ABOUT SECTION === */
+.about-content { max-width: 700px; }
+.about-content p { margin-bottom: 16px; }
+
+.about-facts {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.about-facts article {
+    flex: 1;
+    padding-top: 16px;
+    border-top: 2px solid var(--text);
+}
+
+.about-facts h3 {
+    margin-bottom: 8px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    color: var(--text);
+}
+
+.about-facts p {
+    font-size: 15px;
+    color: var(--grey);
+}
+
+
+/* === DISCOVERY / TIMELINE SECTION === */
+.discovery {
+    display: grid;
+    grid-template-columns: 120px 1fr 1.5fr;
+    gap: 30px;
+    padding: 28px 0;
+    border-top: 1px solid var(--line);
+}
+
+.discovery:last-child {
+    border-bottom: 1px solid var(--line);
+}
+
+.year {
+    font-family: "DM Sans", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1;
+    color: var(--year);
+}
+
+.discovery p {
+    font-size: 15px;
+    color: var(--grey);
+}
