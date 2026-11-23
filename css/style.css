@@ -1,46 +1,36 @@
-/* =========================================
-   COLOURS - CHANGE THEM HERE
-   ========================================= */
-
 :root {
-    --bg: #000136;           /* Main website background */
-    --text: #FFFFFF;         /* Main text and headings */
-    --grey: #CCCCCC;         /* Secondary text */
+    --bg: #000136;
+    --text: #FFFFFF;
+    --grey: #CCCCCC;
 
-    --accent: #B885FF;       /* Labels and navigation hover */
-    --year: #CBBDFF;         /* Timeline year numbers */
+    --accent: #B885FF;
+    --year: #CBBDFF;
 
-    --button: #FFFFFF;       /* All buttons normal background */
-    --button-hover: #6E2F8F; /* All buttons hover background */
+    --button: #FFFFFF;
+    --button-hover: #6E2F8F;
 
-    --secret-box: #211087;   /* Secret cards background */
-    --image-box: #211087;    /* Image backgrounds */
+    --secret-box: #211087;
+    --image-box: #211087;
 
-    --line: #6363D6;         /* All borders and dividing lines */
+    --line: #6363D6;
 
-    /* === FOOTER COLOURS === */
-    --footer-bg: #FFFFFF;        /* Footer background */
-    --footer-text: #000136;      /* Main footer text and headings */
-    --footer-secondary: #3B3B3B; /* Footer descriptions and smaller text */
+
+    --footer-bg: #FFFFFF;
+    --footer-text: #000136;
+    --footer-secondary: #3B3B3B;
 }
 
-
-/* === GENERAL RESET === */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-
-/* === PAGE SCROLLING === */
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
 }
 
-
-/* === MAIN BODY STYLE === */
 body {
     font-family: "Inter", sans-serif;
     font-size: 17px;
@@ -49,8 +39,6 @@ body {
     background: var(--bg);
 }
 
-
-/* === HEADINGS AND TEXT FORMATTING === */
 h1, h2, h3 {
     font-family: "Cormorant Garamond", serif;
     font-weight: 500;
@@ -64,8 +52,6 @@ h3 { font-size: 26px; }
 a { color: inherit; text-decoration: none; }
 ul { list-style: none; }
 
-
-/* === HEADER AND NAVIGATION === */
 header {
     position: sticky;
     top: 0;
@@ -100,8 +86,6 @@ nav a:hover {
     border-color: var(--accent);
 }
 
-
-/* === IMAGE STYLING === */
 .foto {
     background: var(--image-box);
     aspect-ratio: 4 / 3;
@@ -115,8 +99,6 @@ nav a:hover {
     object-fit: cover;
 }
 
-
-/* === HERO / INTRODUCTION SECTION === */
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -141,8 +123,6 @@ nav a:hover {
     color: var(--grey);
 }
 
-
-/* === BUTTONS - ALL BUTTONS SHARE COLOURS === */
 .poga,
 button {
     color: var(--bg);
@@ -153,36 +133,29 @@ button {
     border: none;
 }
 
-/* Main page button */
 .poga {
     display: inline-block;
     padding: 14px 28px;
     font-size: 14px;
 }
 
-/* Other buttons */
 button {
     padding: 10px 20px;
     font: inherit;
     font-size: 13px;
 }
 
-/* All buttons when hovered */
 .poga:hover,
 button:hover {
     color: var(--bg);
     background: var(--button-hover);
 }
 
-
-/* === GENERAL PAGE SECTIONS === */
 .page-section {
     padding: 80px 8%;
     border-top: 1px solid var(--line);
 }
 
-
-/* === ABOUT SECTION === */
 .about-content { max-width: 700px; }
 .about-content p { margin-bottom: 16px; }
 
@@ -211,8 +184,6 @@ button:hover {
     color: var(--grey);
 }
 
-
-/* === DISCOVERY / TIMELINE SECTION === */
 .discovery {
     display: grid;
     grid-template-columns: 120px 1fr 1.5fr;
