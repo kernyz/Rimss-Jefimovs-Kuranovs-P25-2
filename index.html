@@ -26,6 +26,7 @@
             <li><a href="#atklajumi">Atklājumi</a></li>
             <li><a href="#kosmosa-noslepumi">Noslēpumi</a></li>
             <li><a href="#galerija">Galerija</a></li>
+            <li><a href="#karuselis">Karuselis</a></li>
         </ul>
     </nav>
 </header>
@@ -249,11 +250,88 @@
 
             <article class="gallery-item">
                 <div class="foto">
-                    <img src="../../images/dzilais-lauks.png" alt="Džeimsa Veba dziļā lauka attēls">
+                    <img src="images/dzilais-lauks.png" alt="Džeimsa Veba dziļā lauka attēls">
                 </div>
                 <h3>Dziļā lauka attēls</h3>
                 <p>Dažu galaktiku gaisma līdz Džeimsa Veba teleskopam ceļojusi vairāk nekā 13 miljardus gadu.</p>
             </article>
+
+        </div>
+    </section>
+
+    <section id="karuselis" class="page-section">
+        <h2>Pieci attēli ar paskaidrojumiem</h2>
+
+        <div class="carousel-container">
+
+            <div class="carousel-track" id="carousel-track">
+
+                <article class="carousel-slide active">
+                    <div class="foto">
+                        <img src="images/MOON.png" alt="Mēness">
+                    </div>
+                    <div>
+                        <h3>Mēness</h3>
+                        <p>Zemes vienīgais dabiskais pavadonis, aptuveni 384 000 km attālumā. Uz tā virsmas ir staigājuši 12 cilvēki.</p>
+                    </div>
+                </article>
+
+                <article class="carousel-slide">
+                    <div class="foto">
+                        <img src="images/mars.png" alt="Mars">
+                    </div>
+                    <div>
+                        <h3>Mars</h3>
+                        <p>Marsa diena ir par aptuveni 40 minūtēm garāka nekā Zemes diena. Olympus Mons ir augstākais zināmais vulkāns Saules sistēmā, aptuveni 22 km augsts.</p>
+                    </div>
+                </article>
+
+                <article class="carousel-slide">
+                    <div class="foto">
+                        <img src="images/ISS.png" alt="ISS">
+                    </div>
+                    <div>
+                        <h3>Starptautiskā kosmosa stacija (ISS)</h3>
+                        <p>Riņķo ap Zemi aptuveni 400 km augstumā un apriņķo to apmēram katras 90 minūtes. Cilvēki tajā dzīvo nepārtraukti kopš 2000. gada.</p>
+                    </div>
+                </article>
+
+                <article class="carousel-slide">
+                    <div class="foto">
+                        <img src="images/milkyWAy.png" alt="Piena Ceļš">
+                    </div>
+                    <div>
+                        <h3>Piena Ceļš (the Milky Way)</h3>
+                        <p>Mūsu galaktikas diametrs ir aptuveni 100 000 gaismas gadu. Saule atrodas vienā no tās spirālveida rokām.</p>
+                    </div>
+                </article>
+
+                <article class="carousel-slide">
+                    <div class="foto">
+                        <img src="images/jamesWEBB.png" alt="Džeimsa Veba teleskops">
+                    </div>
+                    <div>
+                        <h3>Džeimsa Veba teleskops</h3>
+                        <p>Galvenais spogulis sastāv no 18 zeltīta berilija segmentiem un ir 6,5 m diametrā.</p>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="carousel-controls">
+                <button type="button" id="carousel-previous">← Iepriekšējais</button>
+                <button type="button" id="carousel-next">Nākamais →</button>
+            </div>
+
+            <div class="carousel-indicators" id="carousel-indicators">
+                <button type="button" data-slide="0" aria-label="1. attēls">1</button>
+                <button type="button" data-slide="1" aria-label="2. attēls">2</button>
+                <button type="button" data-slide="2" aria-label="3. attēls">3</button>
+                <button type="button" data-slide="3" aria-label="4. attēls">4</button>
+                <button type="button" data-slide="4" aria-label="5. attēls">5</button>
+            </div>
+
+            <button type="button" id="carousel-play">Apturēt automātisko pārslēgšanu</button>
 
         </div>
     </section>
