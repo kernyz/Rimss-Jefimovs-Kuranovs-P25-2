@@ -56,7 +56,8 @@ Projektam nepieciešama šāda failu struktūra:
 ```text
 projekts/
 ├── index.html
-├── script.js
+├──js/
+│   └──script.js
 ├── gallery.md
 ├── css/
 │   └── style.css
