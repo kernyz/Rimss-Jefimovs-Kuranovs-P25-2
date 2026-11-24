@@ -66,6 +66,6 @@ projekts/
 
 ## 7. Projekta izstrādes ieguldījums
 
-- **Adrians Rimšs:** [Izveidoja html un readme.]
-- **Nikita Kuranovs:** [Izveidoja css.]
-- **Timurs Jefimovs:** [Izveidoja JS un markdown.]
+- **Adrians Rimšs:** Izveidoja html un readme.
+- **Nikita Kuranovs:** Izveidoja css.
+- **Timurs Jefimovs:** Izveidoja JS un markdown.
