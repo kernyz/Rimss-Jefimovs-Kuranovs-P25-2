@@ -1,23 +1,22 @@
 :root {
-    --bg: #000136;           /* Main website background */
-    --text: #FFFFFF;         /* Main text and headings */
-    --grey: #CCCCCC;         /* Secondary text */
+    --bg: #000136;
+    --text: #FFFFFF;
+    --grey: #CCCCCC;
 
-    --accent: #B885FF;       /* Labels and navigation hover */
-    --year: #CBBDFF;         /* Timeline year numbers */
+    --accent: #B885FF;
+    --year: #CBBDFF;
 
-    --button: #FFFFFF;       /* All buttons normal background */
-    --button-hover: #6E2F8F; /* All buttons hover background */
+    --button: #FFFFFF;
+    --button-hover: #6E2F8F;
 
-    --secret-box: #211087;   /* Secret cards background */
-    --image-box: #211087;    /* Image backgrounds */
+    --secret-box: #211087;
+    --image-box: #211087;
 
-    --line: #6363D6;         /* All borders and dividing lines */
+    --line: #6363D6;
 
-    /* === FOOTER COLOURS === */
-    --footer-bg: #FFFFFF;        /* Footer background */
-    --footer-text: #000136;      /* Main footer text and headings */
-    --footer-secondary: #3B3B3B; /* Footer descriptions and smaller text */
+    --footer-bg: #FFFFFF;
+    --footer-text: #000136;
+    --footer-secondary: #3B3B3B;
 }
 
 * {
@@ -256,6 +255,57 @@ button:hover {
 .gallery-item p {
     font-size: 14px;
     color: var(--grey);
+}
+
+.carousel-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.carousel-track { width: 100%; }
+
+.carousel-slide { display: none; }
+
+.carousel-slide.active {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    align-items: end;
+}
+
+.carousel-slide .foto { aspect-ratio: 16 / 10; }
+
+.carousel-slide h3 {
+    margin-bottom: 12px;
+    font-size: 34px;
+}
+
+.carousel-slide p { color: var(--grey); }
+
+.carousel-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.carousel-indicators {
+    display: flex;
+    gap: 8px;
+}
+
+.carousel-indicators button {
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border-radius: 50%;
+}
+
+.carousel-indicators button.active,
+.carousel-indicators button[aria-current="true"] {
+    background: var(--button-hover);
 }
 
 
