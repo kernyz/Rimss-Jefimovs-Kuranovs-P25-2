@@ -1,22 +1,23 @@
 :root {
-    --bg: #000136;
-    --text: #FFFFFF;
-    --grey: #CCCCCC;
+    --bg: #000136;           /* Main website background */
+    --text: #FFFFFF;         /* Main text and headings */
+    --grey: #CCCCCC;         /* Secondary text */
 
-    --accent: #B885FF;
-    --year: #CBBDFF;
+    --accent: #B885FF;       /* Labels and navigation hover */
+    --year: #CBBDFF;         /* Timeline year numbers */
 
-    --button: #FFFFFF;
-    --button-hover: #6E2F8F; 
+    --button: #FFFFFF;       /* All buttons normal background */
+    --button-hover: #6E2F8F; /* All buttons hover background */
 
-    --secret-box: #211087;   
-    --image-box: #211087;    
+    --secret-box: #211087;   /* Secret cards background */
+    --image-box: #211087;    /* Image backgrounds */
 
-    --line: #6363D6;         
+    --line: #6363D6;         /* All borders and dividing lines */
 
-    --footer-bg: #FFFFFF;
-    --footer-text: #000136;
-    --footer-secondary: #3B3B3B;
+    /* === FOOTER COLOURS === */
+    --footer-bg: #FFFFFF;        /* Footer background */
+    --footer-text: #000136;      /* Main footer text and headings */
+    --footer-secondary: #3B3B3B; /* Footer descriptions and smaller text */
 }
 
 * {
@@ -239,6 +240,22 @@ button:hover {
 
 .secret:first-child h3 {
     font-size: 44px;
+}
+
+.gallery-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px 20px;
+}
+
+.gallery-item h3 {
+    margin: 12px 0 6px;
+    font-size: 22px;
+}
+
+.gallery-item p {
+    font-size: 14px;
+    color: var(--grey);
 }
 
 
